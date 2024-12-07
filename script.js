@@ -41,6 +41,11 @@ document.getElementById('button').addEventListener('click', () => {
   setTimeout(() => {
     window.location.href = 'contact.html';
   }, 2000);
+
+  setTimeout(() => {
+    document.getElementById('btnText').style.display = 'block';
+    document.getElementById('loading').style.display = 'none';
+  }, 3000);
 });
 
 

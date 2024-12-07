@@ -76,23 +76,27 @@ ul {
   background-color: #444;
 }
 
+/* main section */
+main {
+  position: relative;
+}
+
 /* first img section */
 .fist-img {
-  margin: 10px;
+  margin: 20px 10px;
   max-width: 15%;
   min-width: 90px;
   text-align: center;
   display: inline-block;
-  transform: translateY(-100%);
+  transform: translateX(+100%);
   opacity: 0;
-  z-index: 100;
   position: absolute;
   right: 0;
-  top: 15%;
+  top: 0%;
 }
 
 .showe {
-  transform: translateY(-0%);
+  transform: translateX(0);
   opacity: 1;
   transition: transform .8s ease, opacity 0.3s ease;
 }
@@ -164,7 +168,7 @@ ul {
   left: 0;
   right: -9px;
   bottom: 0;
-  height: 1.2px;
+  height: 1.3px;
   background-color: #007bff;
   transition: right 0.2s ease-in-out;
 }
@@ -391,14 +395,12 @@ footer {
     align-items: center;
   }
 
-  .profil-img a {
-    margin-top: 10px;
-  }
-}
-
-@media (min-width: 768px) {
   .fist-img {
     display: none;
+  }
+
+  .profil-img a {
+    margin-top: 10px;
   }
 }
 
@@ -411,8 +413,12 @@ footer {
     display: none;
   }
 
+  main {
+    padding-top: 150px;
+  }
+
   .profile {
-    margin-top: 100px;
+    padding: 0 30px;
   }
 }
 
@@ -438,8 +444,7 @@ footer {
   .profile {
     flex-direction: column;
     text-align: start;
-    margin-top: 100px;
-    padding: 50px 15px;
+    padding: 0 15px;
   }
 
   .mes-objectif,
@@ -460,15 +465,11 @@ footer {
   }
 
   .myself h2 {
-    font-size: 29px;
+    font-size: 26px;
   }
   
   .myself .text {
-    font-size: 29px;
-  }
-
-  .fist-img {
-    top: 15%;
+    font-size: 26px;
   }
 }
 
@@ -481,6 +482,14 @@ footer {
   }
 
   .profile {
-    padding: 30px 8px;
+    padding: 0px 8px;
+  }
+
+  .myself h2 {
+    font-size: 24px;
+  }
+  
+  .myself .text {
+    font-size: 24px;
   }
 }

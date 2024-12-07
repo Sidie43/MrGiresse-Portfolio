@@ -25,7 +25,7 @@ function checkAllInputs() {
       btn.style.cursor = 'pointer';
     });
   } else {
-      btn.style.backgroundColor = '';
+    btn.style.backgroundColor = '';
     btn.style.color = '';
     btn.addEventListener('mouseover', () => {
       btn.style.cursor = 'not-allowed';
@@ -37,7 +37,7 @@ for (let input of inputs) {
   input.addEventListener('input', checkAllInputs);
 }
 
-form.addEventListener('submit', function(event) {
+form.addEventListener('submit', function (event) {
   event.preventDefault();
 
   btn.style.backgroundColor = '#026ad8';
@@ -51,10 +51,29 @@ form.addEventListener('submit', function(event) {
     form.method = 'POST';
     form.submit()
   }, 2000);
+
+  setTimeout(() => {
+    btnText.style.display = 'block';
+    loading.style.display = 'none';
+  }, 3000);
 });
 
 
 // rédirection sur la page d'acceuille lors du click sur le logo
-document.querySelector('.logo').addEventListener('click', function() {
+document.querySelector('.logo').addEventListener('click', function () {
   window.location.href = 'index.html';
+});
+
+
+// changer la position de mon header
+document.addEventListener('scroll', () => {
+  const header = document.getElementById('header');
+  const scrollPosition = window.scrollY;
+  const threshold = window.innerHeight / 10;
+
+  if (scrollPosition > threshold) {
+    header.classList.add('hidden');
+  } else {
+    header.classList.remove('hidden');
+  }
 });

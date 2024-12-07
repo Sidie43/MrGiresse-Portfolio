@@ -86,7 +86,6 @@ ul {
   display: inline-block;
   transform: translateX(-100%);
   opacity: 0;
-  z-index: 100;
   position: absolute;
   top: 1%;
 }
@@ -295,11 +294,15 @@ footer {
   }
 
   .myself h2 {
-    font-size: 29px;
+    font-size: 26px;
   }
 
   .myself .text {
-    font-size: 29px;
+    font-size: 26px;
+  }
+
+  .about-me {
+    font-size: 24px;
   }
 
   .nav-bar ul {
@@ -311,5 +314,17 @@ footer {
 @media (max-width: 345px) {
   .profile {
     padding: 30px 8px;
+  }
+
+  .myself h2 {
+    font-size: 24px;
+  }
+
+  .myself .text {
+    font-size: 24px;
+  }
+
+  .about-me {
+    font-size: 22px;
   }
 }

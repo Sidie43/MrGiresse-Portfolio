@@ -38,7 +38,7 @@ setInterval(changeText, 3000);
 document.addEventListener('scroll', () => {
   const header = document.getElementById('header');
   const scrollPosition = window.scrollY;
-  const threshold = window.innerHeight / 2;
+  const threshold = window.innerHeight / 5;
 
   if (scrollPosition > threshold) {
     header.classList.add('hidden');
