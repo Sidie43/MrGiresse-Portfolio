@@ -108,7 +108,7 @@ header {
 }
 
 .close::after {
-  content: url('../img/téléchargement-removebg-preview[1].png');
+  content: url('img/téléchargement-removebg-preview[1].png');
   position: absolute;
   background-color: rgba(0, 0, 0, 0.285);
   height: 100%;
