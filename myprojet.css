@@ -108,7 +108,7 @@ header {
 }
 
 .close::after {
-  content: url('img/téléchargement-removebg-preview[1].png');
+  content: url('https://res.cloudinary.com/ddqfmqin7/image/upload/v1733782658/t%C3%A9l%C3%A9chargement-removebg-preview_1_qe35tl.png');
   position: absolute;
   background-color: rgba(0, 0, 0, 0.285);
   height: 100%;
