@@ -88,6 +88,7 @@ ul {
   opacity: 0;
   position: absolute;
   top: 1%;
+  cursor: pointer;
 }
 
 .show {
@@ -140,6 +141,25 @@ ul {
 .first-img a:hover::after, .second-img a:hover::after {
   background-color: #0056b3;
   left: -10px;
+}
+
+/* modul-img section */
+.modul-img {
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.297);
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+
+.modul-img img {
+  max-width: 250px;
+  min-width: 300px;
+  border-radius: 50%;
+  margin-top: 180px;
 }
 
 /* Section Profile */
@@ -240,7 +260,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.5px) {
   main {
     position: relative;
     padding-top: 150px;

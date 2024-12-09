@@ -9,7 +9,7 @@ function checkAllInputs() {
   let areAllInputsFilled = true;
 
   for (let input of inputs) {
-    if (input.value.trim() === '') {
+    if (input.value.trim().length <= 2) {
       areAllInputsFilled = false;
       break
     }

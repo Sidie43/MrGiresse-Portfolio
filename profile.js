@@ -46,3 +46,18 @@ document.addEventListener('scroll', () => {
     header.classList.remove('hidden');
   }
 });
+
+// faire apparaître l'img en grand
+const modulImg = document.getElementById ('modul-img');
+const image = document.getElementById ('imag');
+
+image.addEventListener('click', function(event) {
+  event.preventDefault();
+  modulImg.style.display = 'inline-block';
+});
+
+window.addEventListener('click', function(event) {
+  if (event.target === modulImg) {
+    modulImg.style.display = 'none';
+  }
+});

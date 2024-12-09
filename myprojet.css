@@ -103,6 +103,25 @@ header {
   background-color: #f4f4f4;
 }
 
+.close {
+  position: relative;
+}
+
+.close::after {
+  content: url('../img/téléchargement-removebg-preview[1].png');
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.285);
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
 .proje-img {
   width: 200px;
   height: auto;
